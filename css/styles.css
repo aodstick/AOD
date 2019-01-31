@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	box-sizing:border-box;
+}
+html, body {
+	height: 100%;
+	width:100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color:#fff;
+	font-family:'Quicksand', 'Helvetica Neue', sans-serif;
+	font-weight:300;
+	font-size:16px;
+	line-height:1.8;
+}
+h1 {
+	font-family: 'Kanit', sans-serif;
+	font-size:150px;
+	font-weight:900;
+    font-style: italic;
+	text-transform:uppercase;
+	text-shadow:0 0 30px rgba(0,0,0,.5);
+	color:#fff;
+    line-height: .9em;
+}
+h2 {
+	font-family: 'Kanit', sans-serif;
+	font-size:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	text-shadow:0 0 5px #000;
+	color:#fff;
+}
+h3 {
+	font-family: 'Kanit', sans-serif;
+	font-size:24px;
+	font-weight:900;
+	text-transform:uppercase;
+	line-height:1;
+	margin:0;
+	padding:0;
+	text-shadow:0 0 3px #333;
+	color:#ff5a00;
+}
+a {
+	color:#ff5a00;
+    font-weight: 500;
+}
+a:hover {
+	color:#ff5a00;
+    text-decoration: underline;
+}
+.lead {
+	font-size:18px;
+	letter-spacing:1px;
+    text-shadow:0 0 8px rgba(0,0,0,.5);
+    font-weight: 300;
+}
+
+/* Content
+----------------------------------------------------------------------------------------------------------- */
+.aod {
+	color:#FFFFFF;
+	white-space:nowrap;
+	font-weight:500;
+    text-transform: uppercase;
+}
+.homeContainer {
+	padding-top:70px;
+}
+.homeLogo img {
+	width:150px;
+	margin-top:30px;
+	text-align:left;
+}
+.established {
+	font-size:13px;
+	position:relative;
+	color:#ccc;
+    text-transform: uppercase;
+}
+.established small {
+	color:#ccc;
+}
+.established p:before {
+	border-top:2px dotted #ff5a00;
+	position:absolute;
+	top:30px;
+	left:40px;
+	width:36%;
+	content:"since";
+    text-align: right;
+    
+}
+.established p:after {
+	border-top:2px dotted #ff5a00;
+	position:absolute;
+	top:30px;
+	right:40px;
+	width:36%;
+	content:"1995";
+    text-align: left;
+}
+
+/* Utility classes
+----------------------------------------------------------------------------------------------------------- */
+.padding-lg {
+	padding:50px;
+}
+
+/* Footer
+----------------------------------------------------------------------------------------------------------- */
+footer {
+	background:rgba(0,0,0,.5);
+	font-size:13px;
+	padding:8px 0;
+	color:#ccc;
+}
+footer a {color:#fff;}
+footer a:hover{ color:#ff5a00;text-decoration:none; }
+footer .pull-right a{
+    margin:0 10px;
+}
+
+/* Responsive
+----------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size:120px;
+        line-height: .9em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size:100px;
+        line-height: .9em;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    body {
+        font-size:15px;
+        line-height:1.6;
+    }
+    .homeContainer {
+        padding-top:20px;
+    }
+    h1 {
+        font-size:52px;
+    }
+    .lead {
+        font-size:17px;
+        letter-spacing:0px;
+    }
+    .established p:before {
+        width:25%;
+    }
+    .established p:after {
+        width:25%;
+    }
+    footer{
+        background-color:transparent;
+    }
+    footer .pull-left, footer .pull-right{
+        float:none;
+        text-align:center;
+    }
+    footer .pull-right{
+        font-size:30px;
+        margin-bottom:20px;
+    }
+    footer .pull-right a{
+        border:1px solid #fff;
+        display: inline-block;
+        border-radius:50%;
+        width:50px;
+        height:50px;
+        line-height:50px;
+        margin:0 10px;
+    }
+}
+/* Player styling
+----------------------------------------------------------------------------------------------------------- */
+.gradient-purple{
+    background-image:
+        url(../images/pattern-purple.jpg),
+        url(../images/ghost-hilltop-gathering-2.jpg),
+        linear-gradient(135deg, #3023ae 0%, #c86dd7 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
+}
+.gradient-brown{
+    background-image:
+        url(../images/pattern-grey.jpg),
+        url(../images/ghost-hilltop-gathering.jpg),
+        linear-gradient(135deg, #c79081 0%, #dfa579 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
+}
+.gradient-red{
+    background-image:
+        url(../images/pattern-grey.jpg),
+        url(../images/ghost-hilltop-gathering.jpg),
+        linear-gradient(135deg, #ff0000 0%, #860404 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
+}
+.gradient-default{
+    background-image:
+        url(../images/pattern-light-grey.jpg),
+        url(../images/ghost-hilltop-gathering-2.jpg),
+        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom, center;
+}
