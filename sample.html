@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <!-- the main language of the page declared -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
 
-        <!-- a viewport declaration which does not disable zooming -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
 
-        <!-- a non-blocking base64 encoded font resource -->
-        <link rel="stylesheet" href="fonts.css" media="none" onload="if(media!='all')media='all'">
-        <noscript><link rel="stylesheet" href="fonts.css"></noscript>
+    <!-- a viewport declaration which does not disable zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- a non-blocking stylesheet -->
-        <link rel="stylesheet" href="main.css" media="none" onload="if(media!='all')media='all'">
-        <noscript><link rel="stylesheet" href="main.css"></noscript>
+    <!-- a non-blocking base64 encoded font resource -->
+    <link rel="stylesheet" href="fonts.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="fonts.css"></noscript>
 
-        <!-- a descriptive label for the page -->
-        <title>Inclusive Design Template | Heydon’s Site</title>
-    </head>
-    <body>
-        <!-- a handy skip link for keyboard users -->
-        <a href="#main">skip to main content</a>
+    <!-- a non-blocking stylesheet -->
+    <link rel="stylesheet" href="main.css" media="none" onload="if(media!='all')media='all'">
+    <noscript>
+        <link rel="stylesheet" href="main.css"></noscript>
 
-        <!-- logo / page navigation etc. goes here -->
+    <!-- a descriptive label for the page -->
+    <title>Inclusive Design Template | Heydon’s Site</title>
+    <style type="text/css">
+        [href="#main"] {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            /* moves off screen */
+        }
 
-        <main id="main">
-            <!-- unique content of page goes here -->
-        </main>
+        [href="#main"]:focus {
+            right: auto;
+        }
 
-        <!-- a non-blocking javascript resource -->
-        <script src="scripts.js"></script>
-    </body>
+    </style>
+</head>
+
+<body>
+    <!-- a handy skip link for keyboard users -->
+    <a href="#main">skip to main content</a>
+
+    <!-- logo / page navigation etc. goes here -->
+
+    <main id="main">
+        <!-- unique content of page goes here -->
+        main content
+    </main>
+
+    <!-- a non-blocking javascript resource -->
+    <script src="scripts.js"></script>
+</body>
+
 </html>
