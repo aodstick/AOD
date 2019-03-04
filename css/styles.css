@@ -128,7 +128,11 @@ footer .pull-right a{
 .icon-social{
     width: 13px;
     height: 13px;
-    fill:orange;
+    fill: #fff;
+    margin-top:5px;
+}
+.icon-social:hover{
+    fill: #ff5a00;
 }
 
 /* Responsive
@@ -187,6 +191,11 @@ footer .pull-right a{
         height:50px;
         line-height:50px;
         margin:0 10px;
+    }
+    .icon-social{
+        width: 25px;
+        height: 25px;
+        margin-top:0px;
     }
 }
 /* Player styling
