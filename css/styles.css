@@ -125,6 +125,11 @@ footer a:hover{ color:#ff5a00;text-decoration:none; }
 footer .pull-right a{
     margin:0 10px;
 }
+.icon-social{
+    width: 13px;
+    height: 13px;
+    fill:orange;
+}
 
 /* Responsive
 ----------------------------------------------------------------------------------------------------------- */
