@@ -60,6 +60,15 @@ a:hover {
     text-shadow:0 0 8px rgba(0,0,0,.5);
     font-weight: 300;
 }
+[href="#main"] {
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+[href="#main"]:focus {
+    right: auto;
+}
 
 /* Content
 ----------------------------------------------------------------------------------------------------------- */
