@@ -26,6 +26,7 @@ h1 {
 	text-shadow:0 0 30px rgba(0,0,0,.5);
 	color:#fff;
     line-height: .9em;
+    margin:0 0 30px 0;
 }
 h2 {
 	font-family: 'Kanit', sans-serif;
@@ -54,11 +55,8 @@ a:hover {
 	color:#ff5a00;
     text-decoration: underline;
 }
-.lead {
-	font-size:18px;
-	letter-spacing:1px;
-    text-shadow:0 0 8px rgba(0,0,0,.5);
-    font-weight: 300;
+p{
+    margin-bottom: 15px;
 }
 [href="#main"] {
     position: absolute;
@@ -70,6 +68,28 @@ a:hover {
     right: auto;
 }
 
+/* Utility classes
+----------------------------------------------------------------------------------------------------------- */
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.lead {
+	font-size:18px;
+	letter-spacing:1px;
+    text-shadow:0 0 8px rgba(0,0,0,.5);
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom:20px;
+}
+.padding-lg {
+	padding:50px;
+}
+
 /* Content
 ----------------------------------------------------------------------------------------------------------- */
 .aod {
@@ -79,7 +99,11 @@ a:hover {
     text-transform: uppercase;
 }
 .homeContainer {
-	padding-top:70px;
+    text-align: center;
+    width:60%;
+}
+.homeContainer h1{
+    margin-top:100px;
 }
 .homeLogo img {
 	width:150px;
@@ -115,12 +139,6 @@ a:hover {
     text-align: left;
 }
 
-/* Utility classes
------------------------------------------------------------------------------------------------------------ */
-.padding-lg {
-	padding:50px;
-}
-
 /* Footer
 ----------------------------------------------------------------------------------------------------------- */
 footer {
@@ -128,10 +146,24 @@ footer {
 	font-size:13px;
 	padding:8px 0;
 	color:#ccc;
+    position: fixed;
+    bottom:0;
+    width: 100%;
 }
-footer a {color:#fff;}
+footer .container{
+    display: flex;
+}
+.copyright{
+    width: 50%;
+}
+.social{
+    width: 50%;
+    order: 2;
+    text-align: right;
+}
+footer a {color:#fff;text-decoration: none;}
 footer a:hover{ color:#ff5a00;text-decoration:none; }
-footer .pull-right a{
+footer .social a{
     margin:0 10px;
 }
 .icon-social{
@@ -144,69 +176,6 @@ footer .pull-right a{
     fill: #ff5a00;
 }
 
-/* Responsive
------------------------------------------------------------------------------------------------------------ */
-@media only screen and (max-width: 1024px) {
-    h1 {
-        font-size:120px;
-        line-height: .9em;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size:100px;
-        line-height: .9em;
-    }
-}
-
-@media only screen and (max-width:479px) {
-    body {
-        font-size:15px;
-        line-height:1.6;
-    }
-    .homeContainer {
-        padding-top:20px;
-    }
-    h1 {
-        font-size:52px;
-    }
-    .lead {
-        font-size:17px;
-        letter-spacing:0px;
-    }
-    .established p:before {
-        width:25%;
-    }
-    .established p:after {
-        width:25%;
-    }
-    footer{
-        background-color:transparent;
-    }
-    footer .pull-left, footer .pull-right{
-        float:none;
-        text-align:center;
-    }
-    footer .pull-right{
-        font-size:30px;
-        margin-bottom:20px;
-    }
-    footer .pull-right a{
-        border:1px solid #fff;
-        display: inline-block;
-        border-radius:50%;
-        width:50px;
-        height:50px;
-        line-height:50px;
-        margin:0 10px;
-    }
-    .icon-social{
-        width: 25px;
-        height: 25px;
-        margin-top:0px;
-    }
-}
 /* Player styling
 ----------------------------------------------------------------------------------------------------------- */
 .gradient-purple{
@@ -344,4 +313,81 @@ footer .pull-right a{
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
+}
+
+/* Responsive
+----------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+    h1 {
+        font-size:120px;
+        line-height: .9em;
+    }
+    .homeContainer{
+        width:80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size:100px;
+        line-height: .9em;
+    }
+    .homeContainer{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 677px) {
+    h1 {
+        font-size:100px;
+        line-height: .9em;
+    }
+    .homeContainer{
+        width:90%;
+    }
+     .homeContainer h1{
+        margin-top:10px;
+    }
+    h1 {
+        font-size:52px;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    body {
+        font-size:15px;
+        line-height:1.6;
+    }
+    .homeContainer {
+        padding-top:20px;
+        width: 100%;
+    }
+   
+    .lead {
+        font-size:17px;
+        letter-spacing:0px;
+    }
+    .established p:before {
+        width:25%;
+    }
+    .established p:after {
+        width:25%;
+    }
+    footer{
+        background:rgba(0,0,0,.25);
+    }
+    footer .copyright{
+        width:60%;
+    }
+    footer .social{
+        width:40%;
+    }
+    .icon-social{
+        width: 30px;
+        height: 30px;
+        margin-top:5px;
+    }
+    .hidden-xs{
+        display: none;
+    }
 }
