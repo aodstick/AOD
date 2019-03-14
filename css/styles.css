@@ -209,7 +209,7 @@ footer .social a{
 }
 .gradient-default{
     background-image:
-        url(../images/pattern-light-grey.jpg),
+        url(../images/pattern-grey.jpg),
         url(../images/ghost-hilltop-gathering-2.jpg),
         linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
     background-blend-mode: multiply;
@@ -334,6 +334,9 @@ footer .social a{
     .homeContainer{
         width:90%;
     }
+    .gradient-default{
+        background-position: bottom, left;
+    }
 }
 
 @media only screen and (max-width: 677px) {
@@ -388,5 +391,12 @@ footer .social a{
     }
     .hidden-xs{
         display: none;
+    }
+    .gradient-default{
+        background-image:
+            url(../images/pattern-grey.jpg),
+            url(../images/ghost-hilltop-gathering-mobile.jpg),
+            linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+        background-position: bottom, center;
     }
 }
