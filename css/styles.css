@@ -16,7 +16,7 @@ body {
 	font-weight:300;
 	font-size:16px;
 	line-height:1.8;
-    background:#000;
+    background:#222;
 }
 h1 {
 	font-family: 'Kanit', sans-serif;
@@ -28,6 +28,7 @@ h1 {
 	color:#fff;
     line-height: .9em;
     margin:0 0 30px 0;
+    letter-spacing: 4px;
 }
 h2 {
 	font-family: 'Kanit', sans-serif;
@@ -39,6 +40,7 @@ h2 {
 	color:#fff;
     line-height: 1.2em;
     margin:0 0 30px 0;
+    letter-spacing: 2px;
 }
 h3 {
 	font-family: 'Kanit', sans-serif;
