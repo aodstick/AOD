@@ -44,14 +44,14 @@ h2 {
 }
 h3 {
 	font-family: 'Kanit', sans-serif;
-	font-size:24px;
+	font-size:36px;
 	font-weight:900;
+    font-style: italic;
 	text-transform:uppercase;
-	line-height:1;
-	margin:0;
-	padding:0;
-	text-shadow:0 0 3px #333;
-	color:#ff5a00;
+    text-shadow:0 0 5px #000;
+	line-height:1.2;
+	margin:0 0 30px 0;
+	color:#fff;
 }
 a {
 	color:#ff5a00;
@@ -80,6 +80,7 @@ p{
     max-width:1200px;
     margin:0 auto;
     padding:0 20px;
+    position: relative;
 }
 .text-uppercase{
     text-transform: uppercase;
@@ -91,6 +92,17 @@ p{
     font-weight: 300;
     line-height: 1.4;
     margin-bottom:20px;
+}
+.section-title{
+    position: absolute;
+    z-index: -1;
+    font-size:300px;
+    top:-75px;
+    left:-50px;
+    color:#222222;
+    line-height: 1;
+    margin:0;
+    padding:0;
 }
 .padding-lg {
 	padding:50px;
