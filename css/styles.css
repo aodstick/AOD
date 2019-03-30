@@ -32,7 +32,7 @@ h1 {
 }
 h2 {
 	font-family: 'Kanit', sans-serif;
-	font-size:36px;
+	font-size:42px;
 	font-weight:900;
     font-style: italic;
 	text-transform:uppercase;
@@ -44,7 +44,7 @@ h2 {
 }
 h3 {
 	font-family: 'Kanit', sans-serif;
-	font-size:36px;
+	font-size:42px;
 	font-weight:900;
     font-style: italic;
 	text-transform:uppercase;
@@ -195,7 +195,7 @@ section{
     margin:0;
     line-height: 1;
     white-space: nowrap;
-    /*font-size:32px;*/
+    font-size:36px;
 }
 .member:hover figcaption h3{
     transform: rotate(0deg);
@@ -215,8 +215,8 @@ section{
 .member.stick{
     background-image:url(../images/ghost-hilltop-gathering-mobile.jpg);
     background-size: 100%;
-    background-position: left bottom;
-    transition: all 200ms;
+    background-position: right bottom;
+    transition: all 200ms ease-out;
 }
 .member:hover{
     background-size: 105%;
@@ -421,6 +421,9 @@ footer .social a{
     .homeContainer{
         width:90%;
     }
+    .member{
+        width:32%;
+    }
     .gradient-default{
         background-position: bottom, left;
     }
@@ -461,6 +464,9 @@ footer .social a{
     }
     .established p:after {
         width:25%;
+    }
+    .member{
+        width:100%;
     }
     footer{
         background:rgba(0,0,0,.25);
