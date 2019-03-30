@@ -16,7 +16,7 @@ body {
 	font-weight:300;
 	font-size:16px;
 	line-height:1.8;
-    background:linear-gradient(135deg, #333 0%, #000 100%);
+    background:#000;
 }
 h1 {
 	font-family: 'Kanit', sans-serif;
@@ -76,14 +76,21 @@ p{
 
 /* Utility classes
 ----------------------------------------------------------------------------------------------------------- */
+section{
+    background:linear-gradient(135deg, #333 0%, #000 100%);
+    overflow: hidden;
+}
 .container{
     max-width:1200px;
     margin:0 auto;
     padding:0 20px;
     position: relative;
+    z-index: 2;
 }
 .flex{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .half{
     width:50%;
@@ -113,7 +120,7 @@ p{
     opacity: .4;
 }
 .padding-lg {
-	padding:75px 25px;
+	padding:100px 15px;
 }
 
 /* Content
@@ -163,6 +170,58 @@ p{
 	content:"1995";
     text-align: left;
 }
+.member{
+    background:#111;
+    border-radius:10px;
+    padding:0;
+    display: flex;
+    width:24%;
+    height:325px;
+    align-items: flex-end;
+    margin:0 0 15px 0;
+    overflow: hidden;
+}
+.member figure{
+    padding:5px 15px 10px 15px;
+    margin:0;
+    background:#000;
+    display: block;
+    width: 100%;
+}
+.member figcaption h3{
+    transform: rotate(-6deg);
+    transform-origin: bottom left;
+    transition: all 200ms;
+    margin:0;
+    line-height: 1;
+    white-space: nowrap;
+    /*font-size:32px;*/
+}
+.member:hover figcaption h3{
+    transform: rotate(0deg);
+    transition: all 500ms;
+}
+.member figcaption p{
+    margin:0;
+    color: #ff5a00;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.member figcaption small{
+    display: block;
+    color:#999;
+    font-weight: 300;
+}
+.member.stick{
+    background-image:url(../images/ghost-hilltop-gathering-mobile.jpg);
+    background-size: 100%;
+    background-position: left bottom;
+    transition: all 200ms;
+}
+.member:hover{
+    background-size: 105%;
+    transition: all 2000ms;
+}
 
 /* Footer
 ----------------------------------------------------------------------------------------------------------- */
@@ -174,6 +233,7 @@ footer {
     position: fixed;
     bottom:0;
     width: 100%;
+    z-index: 100;
 }
 footer .container{
     display: flex;
