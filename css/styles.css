@@ -74,7 +74,7 @@ p{
     right: auto;
 }
 
-/* Utility classes
+/* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section{
     background:linear-gradient(135deg, #333 0%, #000 100%);
@@ -95,8 +95,20 @@ section{
 .half{
     width:50%;
 }
+.third{
+    width:33%;
+}
+.two-third{
+    width:66%;
+}
+
+/* Utility classes
+----------------------------------------------------------------------------------------------------------- */
 .text-uppercase{
     text-transform: uppercase;
+}
+.text-center{
+    text-align: center;
 }
 .lead {
 	font-size:18px;
@@ -186,7 +198,13 @@ section{
     margin:0 0 15px 0;
     overflow: hidden;
 }
-.member figure{
+figure{
+    margin:0;
+    padding:0;
+    display: block;
+    width:100%;
+}
+.member figcaption{
     padding:5px 15px 10px 15px;
     margin:0;
     background:#000;
@@ -199,7 +217,6 @@ section{
     transition: all 200ms;
     margin:0;
     line-height: 1;
-    white-space: nowrap;
     font-size:36px;
 }
 .member:hover figcaption h3{
