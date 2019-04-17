@@ -197,6 +197,8 @@ section{
     align-items: flex-end;
     margin:0 0 15px 0;
     overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    border: 5px solid rgba(0,0,0,0.1);
 }
 figure{
     margin:0;
