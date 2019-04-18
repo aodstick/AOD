@@ -134,6 +134,12 @@ section{
 .padding-lg {
 	padding:100px 15px;
 }
+.padding-md{
+    padding:50px 15px;
+}
+.padding-lg-top{
+    padding-top: 100px;
+}
 .img-responsive{
     display:block;
     max-width:100%;
@@ -197,8 +203,14 @@ section{
     align-items: flex-end;
     margin:0 0 15px 0;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.25);
-    border: 5px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    background-size: 100%;
+    background-position: left top;
+    transition: all 200ms ease-out;
+}
+.member:hover{
+    background-size: 105%;
+    transition: all 200ms;
 }
 figure{
     margin:0;
@@ -209,7 +221,7 @@ figure{
 .member figcaption{
     padding:5px 15px 10px 15px;
     margin:0;
-    background:#000;
+    background-color:#000;
     display: block;
     width: 100%;
 }
@@ -236,16 +248,13 @@ figure{
     color:#999;
     font-weight: 300;
 }
+.member.mouth{
+    background-image:url(../images/member-broermann.jpg);
+}
 .member.stick{
-    background-image:url(../images/ghost-hilltop-gathering-mobile.jpg);
-    background-size: 100%;
-    background-position: right bottom;
-    transition: all 200ms ease-out;
+    background-image:url(../images/member-stick.jpg);
 }
-.member:hover{
-    background-size: 105%;
-    transition: all 2000ms;
-}
+
 
 /* Footer
 ----------------------------------------------------------------------------------------------------------- */
