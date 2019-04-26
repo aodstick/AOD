@@ -204,13 +204,7 @@ section{
     margin:0 0 15px 0;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0,0,0,.5);
-    background-size: 100%;
     background-position: left top;
-    transition: all 200ms ease-out;
-}
-.member:hover{
-    background-size: 105%;
-    transition: all 200ms;
 }
 figure{
     margin:0;
