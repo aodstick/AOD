@@ -225,14 +225,15 @@ section {
 .member {
     border-radius: 10px;
     padding: 0;
-    display: flex;
-    width: 24%;
+    width: 25%;
     height: 325px;
-    align-items: flex-end;
-    margin: 0 0 15px 0;
+    margin: 0 0px 15px 0px;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     background-position: left top;
+    box-sizing: content-box;
+    display: flex;
+    align-items: flex-end;
 }
 
 figure {
@@ -240,7 +241,21 @@ figure {
     padding: 0;
     display: block;
     width: 100%;
+    background:linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+    position: relative;
 }
+figure img{
+    filter: grayscale();
+    mix-blend-mode: multiply;
+    display: block;
+    margin: 0;
+    padding:0;
+}
+.member:hover figure img{
+    filter: none;
+    mix-blend-mode: normal;
+}
+
 
 .member figcaption {
     padding: 5px 15px 10px 15px;
@@ -248,6 +263,8 @@ figure {
     background-color: #000;
     display: block;
     width: 100%;
+    position: absolute;
+    bottom:0;
 }
 
 .member figcaption h3 {
