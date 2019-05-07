@@ -28,7 +28,7 @@ h1 {
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
-    text-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    text-shadow: 0 0 30px rgba(0, 0, 0, .5),2px 2px 5px rgba(0,0,0,0.75);
     color: #fff;
     line-height: .9em;
     margin: 0 0 30px 0;
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
     font-family: 'Kanit', sans-serif;
-    font-size: 42px;
+    font-size: 60px;
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
@@ -46,6 +46,18 @@ h2 {
     line-height: 1.2em;
     margin: 0 0 30px 0;
     letter-spacing: 2px;
+    position: relative;
+    z-index: 10;
+}
+h2:after{
+    content:" ";
+    display: block;
+    border:5px solid #ff5a00;
+    position: absolute;
+    left:30px;
+    bottom:10px;
+    width:300px;
+    z-index: -1;
 }
 
 h3 {
@@ -149,6 +161,9 @@ section {
     text-shadow: 2px 2px 15px #151515;
     opacity: .4;
 }
+.section-title:after{
+    display: none;
+}
 
 .padding-lg {
     padding: 100px 15px;
@@ -222,18 +237,23 @@ section {
     text-align: left;
 }
 
+.member-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 .member {
     border-radius: 10px;
     padding: 0;
-    width: 25%;
+    width: 23%;
     height: 325px;
-    margin: 0 0px 15px 0px;
+    margin: 0 1% 25px 1%;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, .5);
     background-position: left top;
     box-sizing: content-box;
     display: flex;
-    align-items: flex-end;
 }
 
 figure {
@@ -244,18 +264,19 @@ figure {
     background:linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
     position: relative;
 }
-figure img{
+.member figure img{
     filter: grayscale();
     mix-blend-mode: multiply;
     display: block;
     margin: 0;
     padding:0;
+    transition:all 1000ms;
 }
 .member:hover figure img{
     filter: none;
     mix-blend-mode: normal;
+    transition:all 2000ms;
 }
-
 
 .member figcaption {
     padding: 5px 15px 10px 15px;
@@ -293,17 +314,6 @@ figure img{
     color: #999;
     font-weight: 300;
 }
-
-.member.stick {
-    background-image:
-        url(../images/member-stick-grayscale.jpg),
-        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom, center;
-}
-
 
 /* Footer
 ----------------------------------------------------------------------------------------------------------- */
