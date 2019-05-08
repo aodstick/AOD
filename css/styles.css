@@ -282,7 +282,10 @@ figure {
     padding: 5px 15px 10px 15px;
     margin: 0;
     background-color: #000;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height:90px;
     width: 100%;
     position: absolute;
     bottom:0;
