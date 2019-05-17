@@ -185,6 +185,10 @@ section {
     height: auto;
 }
 
+.columns{
+    column-count: 2;
+}
+
 /* Content
 ----------------------------------------------------------------------------------------------------------- */
 .aod {
@@ -278,7 +282,7 @@ figure {
 }
 
 .member:hover figure img {
-    filter: none;
+    filter:none;
     mix-blend-mode: normal;
     transition: all 2000ms;
 }
