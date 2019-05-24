@@ -100,8 +100,15 @@ p {
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
-    background: linear-gradient(135deg, #333 0%, #000 100%);
+    background: linear-gradient(135deg, #222 0%, #000 100%);
     overflow: hidden;
+}
+
+.retro-willie{
+    background: url(../images/willie-retro.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50%;
 }
 
 .container {
