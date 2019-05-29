@@ -100,15 +100,8 @@ p {
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
-    background: linear-gradient(135deg, #222 0%, #000 100%);
+    background: linear-gradient(135deg, #222 0%, #111 100%);
     overflow: hidden;
-}
-
-.retro-willie{
-    background: url(../images/willie-retro.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 50%;
 }
 
 .container {
@@ -175,11 +168,11 @@ section {
 }
 
 .padding-lg {
-    padding: 100px 15px;
+    padding: 100px 30px;
 }
 
 .padding-md {
-    padding: 50px 15px;
+    padding: 50px 30px;
 }
 
 .padding-lg-top {
@@ -192,8 +185,27 @@ section {
     height: auto;
 }
 
-.columns{
+.columns {
     column-count: 2;
+}
+
+.retro-willie {
+    background: url(../images/willie-retro.jpg) #111;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50%;
+}
+
+.polygon {
+    float: left;
+    shape-outside: polygon(0 0, 445px 0, 510px 400px, 0 400px);
+    clip-path: polygon(0 0, 445px 0, 510px 400px, 0 400px);
+    height: 400px;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color:#999;
 }
 
 /* Content
@@ -289,7 +301,7 @@ figure {
 }
 
 .member:hover figure img {
-    filter:none;
+    filter: none;
     mix-blend-mode: normal;
     transition: all 2000ms;
 }
@@ -424,7 +436,7 @@ footer .social a {
 .gradient-default {
     background-image:
         url(../images/pattern-grey.jpg),
-        url(../images/ghost-hilltop-gathering-2.jpg),
+        url(../images/hilltop-gathering-dark.jpg),
         linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -542,6 +554,20 @@ footer .social a {
     .homeContainer {
         width: 80%;
     }
+
+    .retro-willie {
+        background-position: -400px top;
+        background-size: 75%;
+    }
+
+    .polygon {
+        shape-outside: polygon(0 0, 180px 0, 250px 400px, 0 400px);
+        clip-path: polygon(0 0, 180px 0, 250px 400px, 0 400px);
+        height: 400px;
+        width: 250px;
+        justify-content: center;
+        text-shadow: 3px 3px 3px #000;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -561,6 +587,29 @@ footer .social a {
     .gradient-default {
         background-position: bottom, left;
     }
+
+    .padding-lg {
+        padding: 75px 30px;
+    }
+
+    .section-title {
+        font-size: 170px;
+        top: -25px;
+        left: auto;
+        right: 0;
+    }
+
+    .retro-willie {
+        background-position: -400px top;
+        background-size: 100%;
+    }
+
+    .polygon {
+        shape-outside: polygon(0 0, 160px 0, 250px 550px, 0 550px);
+        clip-path: polygon(0 0, 160px 0, 250px 550px, 0 550px);
+        height: 550px;
+    }
+
 }
 
 @media only screen and (max-width: 677px) {
@@ -584,6 +633,15 @@ footer .social a {
     h1 {
         font-size: 52px;
     }
+
+    .retro-willie {
+        background-position: left top;
+        background-size: 100%;
+    }
+
+    .polygon {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:479px) {
@@ -592,10 +650,9 @@ footer .social a {
         line-height: 1.6;
     }
 
-    .half,
-    .third,
-    .two-third {
-        width: 100%;
+    h2 {
+        font-size: 50px;
+        margin: 0 0 30px 0;
     }
 
     .homeContainer {
@@ -627,7 +684,7 @@ footer .social a {
     }
 
     .member {
-        width: 90%;
+        width: 100%;
     }
 
     footer {
