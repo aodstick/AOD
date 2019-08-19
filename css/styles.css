@@ -574,6 +574,7 @@ footer .social a {
     h1 {
         font-size: 100px;
         line-height: .9em;
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0), 2px 2px 5px rgba(0, 0, 0, 0.35);
     }
 
     .homeContainer {
