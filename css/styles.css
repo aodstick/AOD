@@ -296,14 +296,12 @@ figure {
     display: block;
     margin: 0;
     padding: 0;
-    transition: all 1000ms;
     width: 100%;
 }
 
 .member:hover figure img {
     filter: none;
     mix-blend-mode: normal;
-    transition: all 2000ms;
 }
 
 .member figcaption {
@@ -322,7 +320,6 @@ figure {
 .member figcaption h3 {
     transform: rotate(-6deg);
     transform-origin: bottom left;
-    transition: all 200ms;
     margin: 0;
     line-height: 1;
     font-size: 36px;
@@ -330,7 +327,6 @@ figure {
 
 .member:hover figcaption h3 {
     transform: rotate(0deg);
-    transition: all 500ms;
 }
 
 .member figcaption p {
