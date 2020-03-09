@@ -97,6 +97,21 @@ p {
     right: auto;
 }
 
+/* New Grid
+----------------------------------------------------------------------------------------------------------- */
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.start{
+    grid-column: 2 / span 6;
+    text-align: center;
+    align-self: center;
+}
+
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
