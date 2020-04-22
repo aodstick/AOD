@@ -568,6 +568,18 @@ footer .social a {
 /* Responsive
 ----------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
+    .main-grid{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px auto auto auto;
+        max-width: 100%;
+    }
+    .start{
+        grid-column: 2 / span 6;
+    }
+    
+    .lead-in{
+        grid-column: 2 / span 6;
+    }
     h1 {
         font-size: 120px;
         line-height: .9em;
