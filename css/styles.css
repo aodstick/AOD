@@ -295,7 +295,6 @@ section {
 }
 
 .member {
-    border-radius: 10px;
     padding: 0;
     width: 23%;
     height: 325px;
@@ -323,11 +322,13 @@ figure {
     margin: 0;
     padding: 0;
     width: 100%;
+    transition: all .5s;
 }
 
 .member:hover figure img {
     filter: none;
     mix-blend-mode: normal;
+    transition: all 1s ease-in;
 }
 
 .member figcaption {
@@ -349,10 +350,12 @@ figure {
     margin: 0;
     line-height: 1;
     font-size: 36px;
+    transition: all .25s;
 }
 
 .member:hover figcaption h3 {
     transform: rotate(0deg);
+    transition: all .5s;
 }
 
 .member figcaption p {
