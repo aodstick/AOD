@@ -126,7 +126,7 @@ p {
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
-    background: linear-gradient(135deg, #222 0%, #111 100%);
+    background: linear-gradient(135deg, #111 0%, #000 100%);
     overflow: hidden;
 }
 
@@ -472,7 +472,7 @@ footer .social a {
 
 .aod-gradient-default {
     background-image:
-        url(../images/aod-hilltop.jpg),
+        url(../images/aod-hilltop-greyscale.jpg),
         linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -637,6 +637,10 @@ footer .social a {
         background-position: bottom, left;
     }
 
+    .aod-gradient-default {
+        background-position: left;
+    }
+
     .padding-lg {
         padding: 75px 30px;
     }
@@ -762,6 +766,13 @@ footer .social a {
         background-image:
             url(../images/pattern-grey.jpg),
             url(../images/ghost-hilltop-gathering-mobile.jpg),
+            linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+        background-position: bottom, center;
+    }
+
+    .aod-gradient-default {
+        background-image:
+            url(../images/aod-hilltop-mobile-greyscale.jpg),
             linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
         background-position: bottom, center;
     }
