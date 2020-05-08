@@ -31,7 +31,7 @@ h1 {
     text-shadow: 0 0 30px rgba(0, 0, 0, .5), 2px 2px 5px rgba(0, 0, 0, 0.75);
     color: #fff;
     line-height: .9em;
-    margin: 0 0 30px 0;
+    margin: 0;
     letter-spacing: 4px;
 }
 
@@ -97,10 +97,36 @@ p {
     right: auto;
 }
 
+/* New Grid
+----------------------------------------------------------------------------------------------------------- */
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 15px;
+    grid-template-rows: 85px auto auto auto;
+    grid-row-gap: 15px;
+    max-width: 1400px;
+    margin:0 auto;
+}
+
+.start{
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    text-align: center;
+    align-self: center;
+}
+
+.lead-in{
+    grid-column: 4 / span 6;
+    grid-row: 3;
+    text-align: center;
+    align-self: center;
+}
+
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
-    background: linear-gradient(135deg, #222 0%, #111 100%);
+    background: linear-gradient(135deg, #111 0%, #000 100%);
     overflow: hidden;
 }
 
@@ -245,8 +271,8 @@ section {
     border-top: 2px dotted #ff5a00;
     position: absolute;
     top: 30px;
-    left: 40px;
-    width: 38%;
+    left: 0px;
+    width: 43%;
     content: "since";
     text-align: right;
 
@@ -256,8 +282,8 @@ section {
     border-top: 2px dotted #ff5a00;
     position: absolute;
     top: 30px;
-    right: 40px;
-    width: 38%;
+    right: 0px;
+    width: 43%;
     content: "1995";
     text-align: left;
 }
@@ -269,7 +295,6 @@ section {
 }
 
 .member {
-    border-radius: 10px;
     padding: 0;
     width: 23%;
     height: 325px;
@@ -297,11 +322,13 @@ figure {
     margin: 0;
     padding: 0;
     width: 100%;
+    transition: all .5s;
 }
 
 .member:hover figure img {
     filter: none;
     mix-blend-mode: normal;
+    transition: all 1s ease-in;
 }
 
 .member figcaption {
@@ -323,10 +350,12 @@ figure {
     margin: 0;
     line-height: 1;
     font-size: 36px;
+    transition: all .25s;
 }
 
 .member:hover figcaption h3 {
     transform: rotate(0deg);
+    transition: all .5s;
 }
 
 .member figcaption p {
@@ -441,6 +470,17 @@ footer .social a {
     height: 100vh;
 }
 
+.aod-gradient-default {
+    background-image:
+        url(../images/aod-hilltop-greyscale.jpg),
+        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 /* Animation
 ----------------------------------------------------------------------------------------------------------- */
 .animated {
@@ -542,6 +582,18 @@ footer .social a {
 /* Responsive
 ----------------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
+    .main-grid{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px auto auto auto;
+        max-width: 100%;
+    }
+    .start{
+        grid-column: 2 / span 6;
+    }
+    
+    .lead-in{
+        grid-column: 2 / span 6;
+    }
     h1 {
         font-size: 120px;
         line-height: .9em;
@@ -583,6 +635,10 @@ footer .social a {
 
     .gradient-default {
         background-position: bottom, left;
+    }
+
+    .aod-gradient-default {
+        background-position: left;
     }
 
     .padding-lg {
@@ -710,6 +766,13 @@ footer .social a {
         background-image:
             url(../images/pattern-grey.jpg),
             url(../images/ghost-hilltop-gathering-mobile.jpg),
+            linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+        background-position: bottom, center;
+    }
+
+    .aod-gradient-default {
+        background-image:
+            url(../images/aod-hilltop-mobile-greyscale.jpg),
             linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
         background-position: bottom, center;
     }
