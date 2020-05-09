@@ -666,9 +666,8 @@ footer .social a {
 }
 
 @media only screen and (max-width: 677px) {
-    h1 {
-        font-size: 100px;
-        line-height: .9em;
+    .main-grid{
+        grid-template-rows: 20px auto auto auto;
     }
 
     .homeContainer {
@@ -685,6 +684,11 @@ footer .social a {
 
     h1 {
         font-size: 52px;
+        background-image: url(../images/AOD.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        height:100px;
     }
 
     .retro-willie {
@@ -725,11 +729,11 @@ footer .social a {
     }
 
     .established p:before {
-        width: 25%;
+        width: 34%;
     }
 
     .established p:after {
-        width: 25%;
+        width: 34%;
     }
 
     .member-grid {
