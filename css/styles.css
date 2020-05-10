@@ -215,8 +215,15 @@ section {
     column-count: 2;
 }
 
-.retro-willie {
+.no-webp .retro-willie {
     background: url(../images/willie-retro.jpg) #111;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 50%;
+}
+
+.webp .retro-willie {
+    background: url(../images/willie-retro.webp) #111;
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 50%;
@@ -464,14 +471,24 @@ footer .social a {
 }
 
 .aod-gradient-default {
-    background-image:
-        url(../images/aod-hilltop-greyscale.jpg),
-        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
+}
+
+
+.no-webp .aod-gradient-default {
+    background-image:
+        url(../images/aod-hilltop-greyscale.jpg),
+        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+}
+
+.webp .aod-gradient-default {
+    background-image:
+        url(../images/aod-hilltop-greyscale.webp),
+        linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
 }
 
 /* Animation
@@ -592,7 +609,7 @@ footer .social a {
         line-height: .9em;
     }
 
-    .retro-willie {
+    .no-webp .retro-willie, webp .retro-willie {
         background-position: -400px top;
         background-size: 75%;
     }
@@ -637,7 +654,7 @@ footer .social a {
         right: 0;
     }
 
-    .retro-willie {
+    .no-webp .retro-willie, webp .retro-willie {
         background-position: -400px top;
         background-size: 100%;
     }
@@ -661,7 +678,7 @@ footer .social a {
         width: 48%;
     }
 
-    .retro-willie {
+    .no-webp .retro-willie, webp .retro-willie {
         background-position: left top;
         background-size: 100%;
     }
@@ -722,6 +739,10 @@ footer .social a {
 
     .member {
         width: 100%;
+    }
+
+    .follow{
+        padding:75px 30px 108px 30px;
     }
 
     footer {
