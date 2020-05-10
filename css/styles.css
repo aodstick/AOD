@@ -126,7 +126,7 @@ p {
 /* Grid classes
 ----------------------------------------------------------------------------------------------------------- */
 section {
-    background: linear-gradient(135deg, #111 0%, #000 100%);
+    background: linear-gradient(135deg, #222 0%, #111 100%);
     overflow: hidden;
 }
 
@@ -241,13 +241,6 @@ section {
     white-space: nowrap;
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.homeContainer {
-    text-align: center;
-    width: 65%;
-    margin: 0 auto;
-    padding: 100px 0 0 0;
 }
 
 .homeLogo img {
@@ -599,10 +592,6 @@ footer .social a {
         line-height: .9em;
     }
 
-    .homeContainer {
-        width: 80%;
-    }
-
     .retro-willie {
         background-position: -400px top;
         background-size: 75%;
@@ -623,10 +612,6 @@ footer .social a {
         font-size: 100px;
         line-height: .9em;
         text-shadow: 0 0 30px rgba(0, 0, 0, 0), 2px 2px 5px rgba(0, 0, 0, 0.35);
-    }
-
-    .homeContainer {
-        width: 90%;
     }
 
     .member {
@@ -667,28 +652,13 @@ footer .social a {
 
 @media only screen and (max-width: 677px) {
     .main-grid{
-        grid-template-rows: 20px auto auto auto;
-    }
-
-    .homeContainer {
-        width: 90%;
-    }
-
-    .homeContainer h1 {
-        margin-top: 10px;
+        grid-template-columns: 16px 1fr 1fr 1fr 1fr 1fr 1fr 16px;
+        grid-column-gap: 8px;
+        grid-template-rows: 32px auto auto auto;
     }
 
     .member {
         width: 48%;
-    }
-
-    h1 {
-        font-size: 52px;
-        background-image: url(../images/AOD.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-        height:100px;
     }
 
     .retro-willie {
@@ -707,14 +677,24 @@ footer .social a {
         line-height: 1.6;
     }
 
+    h1 {
+        background-image: url(../images/AOD.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+        font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        text-shadow: none;
+        margin: 0 16px;
+        letter-spacing: 1px;
+        padding-top:36%;
+    }
+
     h2 {
         font-size: 50px;
         margin: 0 0 30px 0;
-    }
-
-    .homeContainer {
-        padding-top: 20px;
-        width: 100%;
     }
 
     .section-title {
@@ -748,12 +728,19 @@ footer .social a {
         background: rgba(0, 0, 0, .25);
     }
 
+    footer .container {
+        display: block;
+    }
+
     footer .copyright {
-        width: 60%;
+        text-align: center;
+        width:100%;
     }
 
     footer .social {
-        width: 40%;
+        width: 100%;
+        text-align: center;
+        margin-bottom:8px;
     }
 
     .icon-social {
