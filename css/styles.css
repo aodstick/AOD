@@ -782,10 +782,17 @@ footer .social a {
         background-position: bottom, center;
     }
 
-    .aod-gradient-default {
+    .no-webp .aod-gradient-default {
         background-image:
             url(../images/aod-hilltop-mobile-greyscale.jpg),
             linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
-        background-position: bottom, center;
+            background-position: center;
+    }
+    
+    .webp .aod-gradient-default {
+        background-image:
+            url(../images/aod-hilltop-mobile-greyscale.webp),
+            linear-gradient(135deg, #007AC2 0%, #f88b33 100%);
+            background-position: center;
     }
 }
