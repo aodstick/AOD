@@ -65,7 +65,30 @@ h1 {
     margin: 0;
     letter-spacing: 4px;
 }
+/*
+@media (prefers-color-scheme: dark) {
 
+}
+  
+@media (prefers-color-scheme: light) {
+    h1 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 150px;
+        font-weight: 900;
+        font-style: italic;
+        text-transform: uppercase;
+        text-shadow: none;
+        color: #fff;
+        line-height: .9em;
+        margin: 0;
+        letter-spacing: 4px;
+        background: -webkit-linear-gradient(-70deg,#9867f0,#ed4e50);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+    }
+}
+*/
 h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 60px;
