@@ -59,36 +59,35 @@ h1 {
     font-weight: 900;
     font-style: italic;
     text-transform: uppercase;
-    text-shadow: 0 0 30px rgba(0, 0, 0, .5), 2px 2px 5px rgba(0, 0, 0, 0.75);
-    color: #fff;
     line-height: .9em;
     margin: 0;
     letter-spacing: 4px;
 }
-/*
-@media (prefers-color-scheme: dark) {
 
+@media (prefers-color-scheme: dark) {
+    h1{
+        background: #fff;
+        background: -webkit-linear-gradient(to right, #fff 0%, #ccc 100%);
+        background: -moz-linear-gradient(to right, #fff 0%, #ccc 100%);
+        background: linear-gradient(to right, #fff 0%, #ccc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+    }
 }
   
 @media (prefers-color-scheme: light) {
     h1 {
-        font-family: 'Kanit', sans-serif;
-        font-size: 150px;
-        font-weight: 900;
-        font-style: italic;
-        text-transform: uppercase;
-        text-shadow: none;
-        color: #fff;
-        line-height: .9em;
-        margin: 0;
-        letter-spacing: 4px;
-        background: -webkit-linear-gradient(-70deg,#9867f0,#ed4e50);
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        -webkit-box-decoration-break: clone;
     }
 }
-*/
+
 h2 {
     font-family: 'Kanit', sans-serif;
     font-size: 60px;
