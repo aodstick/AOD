@@ -79,12 +79,14 @@ h1 {
   
 @media (prefers-color-scheme: light) {
     h1 {
-        background: #121FCF;
-        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
-        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
-        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: #fff;
+        background: -webkit-linear-gradient(to right, #fff 0%, #ccc 100%);
+        background: -moz-linear-gradient(to right, #fff 0%, #ccc 100%);
+        background: linear-gradient(to right, #fff 0%, #ccc 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
     }
 }
 
@@ -748,13 +750,6 @@ footer .social a {
     }
 
     h1 {
-        background-image: url(../images/AOD.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen-Sans, Ubuntu, Cantarell,
-        "Helvetica Neue", sans-serif;
         font-size: 20px;
         font-weight: 300;
         font-style: normal;
@@ -762,6 +757,46 @@ footer .social a {
         margin: 0 16px;
         letter-spacing: 1px;
         padding-top:36%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        h1{
+            background: #fff;
+            background: -webkit-linear-gradient(to right, #fff 0%, #ccc 100%);
+            background: -moz-linear-gradient(to right, #fff 0%, #ccc 100%);
+            background: linear-gradient(to right, #fff 0%, #ccc 100%);
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            -webkit-text-stroke-width: initial;
+            -webkit-text-stroke-color: initial;
+            background-image: url(../images/AOD.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+            "Helvetica Neue", sans-serif;
+        }
+    }
+      
+    @media (prefers-color-scheme: light) {
+        h1 {
+            background: #fff;
+            background: -webkit-linear-gradient(to right, #fff 0%, #ccc 100%);
+            background: -moz-linear-gradient(to right, #fff 0%, #ccc 100%);
+            background: linear-gradient(to right, #fff 0%, #ccc 100%);
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            -webkit-text-stroke-width: initial;
+            -webkit-text-stroke-color: initial;
+            background-image: url(../images/AOD.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+            "Helvetica Neue", sans-serif;
+        }
     }
 
     h2 {
